@@ -1,4 +1,5 @@
 // src/components/Team.jsx
+
 import SanjeevImg from "../assets/images/sanjeev.png";
 import DeepikaImg from "../assets/images/deepika.png";
 import MathavImg from "../assets/images/mathav.png";
@@ -7,36 +8,12 @@ import SanjayImg from "../assets/images/sanjay.png";
 import TamilImg from "../assets/images/tamil.png";
 
 const teamMembers = [
-  {
-    name: "Sanjeev",
-    role: "Initiative Lead",
-    img: SanjeevImg,
-  },
-  {
-    name: "Deepika",
-    role: "Design & Frontend",
-    img: DeepikaImg,
-  },
-  {
-    name: "Mathavan",
-    role: "Design & Frontend",
-    img: MathavImg,
-  },
-  {
-    name: "Naveeth",
-    role: "Prototyping & Visuals",
-    img: NaveethImg,
-  },
-  {
-    name: "Sanjay",
-    role: "Systems & Exploration",
-    img: SanjayImg,
-  },
-  {
-    name: "Tamilarasan",
-    role: "Research Support",
-    img: TamilImg,
-  },
+  { name: "Sanjeev", role: "Initiative Lead", img: SanjeevImg },
+  { name: "Deepika", role: "Design & Frontend", img: DeepikaImg },
+  { name: "Mathavan", role: "Design & Frontend", img: MathavImg },
+  { name: "Naveeth", role: "Prototyping & Visual Exploration", img: NaveethImg },
+  { name: "Sanjay", role: "Systems Exploration", img: SanjayImg },
+  { name: "Tamilarasan", role: "Research Support", img: TamilImg },
 ];
 
 function Team() {
@@ -52,35 +29,37 @@ function Team() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4">
-        {/* section header */}
-        <div className="reveal text-center mb-12">
-          <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-emerald-300/80">
+        {/* header */}
+        <div className="reveal text-center mb-14">
+          <p className="inline-flex items-center gap-2
+                        text-[11px] font-semibold uppercase
+                        tracking-[0.25em] text-emerald-300/80">
             <span className="h-px w-6 bg-emerald-400/80" />
             Team
           </p>
 
           <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-white">
-            People behind BeatRescue
+            People involved in BeatRescue
           </h2>
 
           <p className="mt-4 text-sm md:text-base text-slate-300 max-w-2xl mx-auto">
-            BeatRescue is built by a small, committed group working together
-            to explore practical ways to support disaster response efforts.
+            BeatRescue is shaped by a small group contributing across
+            design, systems thinking, prototyping, and research support.
           </p>
         </div>
 
-        {/* team grid */}
+        {/* grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((m) => (
             <div
               key={m.name}
-              className="reveal rounded-2xl border border-white/10
-                         bg-slate-900/70 px-6 py-7
+              className="reveal rounded-xl border border-white/10
+                         bg-slate-900/60 px-6 py-7
                          flex flex-col items-center text-center
-                         shadow-lg shadow-black/40
-                         hover:border-emerald-400/50 transition"
+                         hover:border-emerald-400/40 transition"
             >
-              <div className="w-28 h-28 rounded-full overflow-hidden border border-white/20 mb-4">
+              <div className="w-24 h-24 rounded-md overflow-hidden
+                              border border-white/20 mb-4">
                 <img
                   src={m.img}
                   alt={m.name}
@@ -88,7 +67,7 @@ function Team() {
                 />
               </div>
 
-              <h3 className="text-lg font-semibold text-white">
+              <h3 className="text-base font-semibold text-white">
                 {m.name}
               </h3>
 

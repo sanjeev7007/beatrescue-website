@@ -14,34 +14,39 @@ function Contact() {
 
       <div className="relative max-w-5xl mx-auto px-4">
         {/* section header */}
-        <div className="reveal text-center mb-12">
-          <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-emerald-300/80">
+        <div className="reveal text-center mb-14">
+          <p className="inline-flex items-center gap-2
+                        text-[11px] font-semibold uppercase
+                        tracking-[0.25em] text-emerald-300/80">
             <span className="h-px w-6 bg-emerald-400/80" />
             Contact
           </p>
 
           <h2 className="mt-3 text-3xl md:text-4xl font-extrabold text-white">
-            Get in touch
+            Open to thoughtful conversations
           </h2>
 
           <p className="mt-4 text-sm md:text-base text-slate-300 max-w-xl mx-auto">
-            We’re open to conversations with collaborators, mentors,
-            organizations, and others interested in disaster-response work.
+            We welcome discussions with collaborators, mentors,
+            organizations, and others interested in disaster-response
+            research and exploration.
           </p>
         </div>
 
-        {/* contact cards */}
+        {/* contact options */}
         <div className="grid gap-4 md:grid-cols-2">
+          
           {/* Email */}
           <a
             href="mailto:beatrescuelife@gmail.com"
-            className="reveal flex gap-4 items-start rounded-2xl
-                       border border-white/10 bg-slate-950/70 p-5
-                       shadow-md shadow-black/40
-                       hover:border-emerald-400/60 hover:shadow-lg transition"
+            className="reveal flex gap-4 items-start
+                       rounded-xl border border-white/10
+                       bg-slate-950/60 p-5
+                       hover:border-emerald-400/40 transition"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full
-                            bg-slate-900 border border-emerald-400/50">
+            <div className="flex h-9 w-9 items-center justify-center
+                            rounded-md bg-slate-900
+                            border border-emerald-400/40">
               <i className="fa-solid fa-envelope text-emerald-300 text-sm" />
             </div>
 
@@ -53,7 +58,7 @@ function Contact() {
                 beatrescuelife@gmail.com
               </div>
               <p className="mt-1 text-xs text-slate-400">
-                Best for introductions, questions, or collaboration ideas.
+                Best for introductions or collaboration ideas.
               </p>
             </div>
           </a>
@@ -63,13 +68,14 @@ function Contact() {
             href="https://www.linkedin.com/in/sanjeev-s-t/"
             target="_blank"
             rel="noopener noreferrer"
-            className="reveal flex gap-4 items-start rounded-2xl
-                       border border-white/10 bg-slate-950/70 p-5
-                       shadow-md shadow-black/40
-                       hover:border-sky-400/60 hover:shadow-lg transition"
+            className="reveal flex gap-4 items-start
+                       rounded-xl border border-white/10
+                       bg-slate-950/60 p-5
+                       hover:border-sky-400/40 transition"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full
-                            bg-slate-900 border border-sky-400/50">
+            <div className="flex h-9 w-9 items-center justify-center
+                            rounded-md bg-slate-900
+                            border border-sky-400/40">
               <i className="fa-brands fa-linkedin text-sky-400 text-sm" />
             </div>
 
@@ -81,17 +87,17 @@ function Contact() {
                 Follow updates
               </div>
               <p className="mt-1 text-xs text-slate-400">
-                Project progress, events, and public updates.
+                Public progress, events, and learning updates.
               </p>
             </div>
           </a>
         </div>
 
-        {/* footer note */}
-        <div className="reveal text-center mt-10">
+        {/* note */}
+        <div className="reveal text-center mt-12">
           <p className="text-xs text-slate-400 max-w-xl mx-auto">
-            BeatRescue is an early-stage initiative.
-            We value thoughtful conversations and responsible collaboration.
+            BeatRescue is an early-stage initiative. We value clarity,
+            responsibility, and long-term thinking over quick outcomes.
           </p>
         </div>
       </div>

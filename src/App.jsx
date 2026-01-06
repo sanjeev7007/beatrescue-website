@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
-import Hardware from "./components/Hardware";
+
 import Team from "./components/Team";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
